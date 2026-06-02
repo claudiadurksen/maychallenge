@@ -63,7 +63,7 @@
         <div class="divider"></div>
         <p class="greeting"><span style="font-family: Georgia, serif; font-size: 17px;">Hello, Beautiful ✨</span><br>You're becoming everything you envisioned.</p>
         <div class="affirmation-card">
-            <div class="affirmation-label">Today's Quote</div>
+            <div class="affirmation-label">Today's Truth</div>
             <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             <div class="quote-mark">"</div>
             <div class="affirmation-text" id="quote"></div>
@@ -111,34 +111,36 @@
     </div>
     <script>
         const quotes = [
-            { text: "The woman you're becoming costs you people, places, and patterns. Let them go.", author: "Brianna Wiest" },
-            { text: "You don't get what you want. You get what you commit to when no one's watching.", author: "Matthew McConaughey" },
-            { text: "The life you want isn't on the other side of discipline. It is the discipline.", author: "Brianna Wiest" },
-            { text: "Stop romanticizing the version of you that never shows up. Become her instead.", author: "Brianna Wiest" },
-            { text: "Your children don't need a perfect mother. They need a present one who keeps her promises to herself.", author: "Glennon Doyle" },
-            { text: "The work you're avoiding is the exact work that will set you free.", author: "Brianna Wiest" },
-            { text: "You're not behind. You're exactly where choosing comfort over growth has placed you.", author: "Brianna Wiest" },
-            { text: "The woman who waits for the right time waits forever. The woman who starts builds momentum.", author: "Mel Robbins" },
-            { text: "Your future self is built in the decisions you're making right now, not tomorrow.", author: "Matthew McConaughey" },
-            { text: "Stop asking for permission to take up space. Your presence alone is the answer.", author: "Glennon Doyle" },
-            { text: "Discipline isn't punishment. It's self-respect in action.", author: "Brianna Wiest" },
-            { text: "The version of you that your kids will remember isn't the one who looked perfect. It's the one who didn't quit.", author: "Rachel Hollis" },
-            { text: "You can't hate yourself into a version of yourself you love. Start there.", author: "Brianna Wiest" },
-            { text: "The standard you walk past is the standard you accept. Raise it.", author: "David Morrison" },
-            { text: "Most people don't want to change. They want to have already changed. Be different.", author: "James Clear" },
-            { text: "Stop waiting to feel motivated. Motivation is what happens after you start moving.", author: "Mel Robbins" },
-            { text: "The gap between who you are and who you want to be closes the moment you start doing the work.", author: "Brianna Wiest" },
-            { text: "Your kids are learning what commitment looks like by watching you keep promises to yourself.", author: "Glennon Doyle" },
-            { text: "The life you're building in private will eventually become what you live in public.", author: "Matthew McConaughey" },
-            { text: "The magic you're looking for is in the work you're avoiding.", author: "Brianna Wiest" },
-            { text: "Strong women don't have it all together. They just refuse to fall apart when things get hard.", author: "Rachel Hollis" },
-            { text: "Stop waiting for someone to believe in you. Be that someone.", author: "Mel Robbins" },
-            { text: "The choices you made yesterday brought you here. The choices you make today determine where you go next.", author: "Matthew McConaughey" },
-            { text: "Your capacity to change is greater than your current circumstances. Act like it.", author: "Brianna Wiest" },
-            { text: "Being a mother doesn't mean abandoning yourself. It means modeling self-respect for the people watching you closest.", author: "Glennon Doyle" },
-            { text: "The time will pass anyway. You can either spend it wishing or building. Choose.", author: "James Clear" },
-            { text: "You don't need a new opportunity. You need to become the person who's ready when it shows up.", author: "Matthew McConaughey" },
-            { text: "The strongest women aren't the ones who never struggle. They're the ones who show up anyway.", author: "Rachel Hollis" }
+            { text: "I release the story that I have to earn the right to take up space. I was born worthy.", author: "Blue Moon in Sagittarius" },
+            { text: "I am letting go of the version of me that made herself small so others could feel comfortable.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the habit of apologizing for my ambition. My fire is not too much — it is exactly enough.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the fear that if I change, I will lose people who love me. The right ones will rise with me.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the belief that rest is laziness. Recovery is part of the work. Rest is sacred.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the need for everyone's approval before I move. My own knowing is enough.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the version of me that waited to feel ready. Readiness is built in the doing, not before it.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the guilt of outgrowing relationships, habits, and versions of myself that no longer serve me.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the lie that playing it safe is protection. Staying small is its own kind of risk.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the need to explain my healing to people who were comfortable with my wounds.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of self-doubt dressed up as practicality. My vision is not naive — it is necessary.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the pattern of abandoning myself to keep the peace. My peace is the priority.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the timeline I built in fear. The one built in truth looks completely different.", author: "Blue Moon in Sagittarius" },
+            { text: "I release every relationship, habit, and belief that requires me to be less than I am.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the idea that I have to have it all figured out before I begin. I begin anyway.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the version of success I inherited from fear. I am building the one that actually feels like mine.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of performing strength. Real strength looks like asking for help when I need it.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the belief that my body is something to fix. It is something to fuel.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the assumption that love means losing myself. Real love requires me fully present.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the habit of dimming my joy because others are struggling. My light is not their burden.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the scarcity that taught me to hoard energy and opportunity. I trust abundance.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the version of me that believed she had to suffer to be worthy of the outcome.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the comparison that has kept me measuring my path against someone else's journey.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the fear that my ambition makes me a bad mother. My ambition is teaching them everything.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of proving myself to people who have already decided what I am. I know what I am.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the belief that I have to do this alone. Receiving help is not weakness — it is wisdom.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of every version of myself that was built to survive instead of thrive.", author: "Blue Moon in Sagittarius" },
+            { text: "I release the old contracts — the ones I never agreed to but carried anyway. They are not mine to keep.", author: "Blue Moon in Sagittarius" },
+            { text: "I let go of the war with my own body, my own mind, my own timeline. I choose alliance instead.", author: "Blue Moon in Sagittarius" },
+            { text: "Under this Blue Moon, I release what has been. I step fully and finally into who I am becoming.", author: "Blue Moon in Sagittarius" }
         ];
         const affirmations = [
             "I am becoming the woman who shows up, no matter what.",
